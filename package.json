@@ -1,0 +1,20 @@
+{
+  "name": "gulp-yui-meta",
+  "version": "0.1.0",
+  "description": "Extract YUI Loader meta from YUI modules",
+  "keywords": [
+    "yui",
+    "gulpplugin",
+    "stream"
+  ],
+  "repository": "https://github.com/periodical/gulp-yui-meta.git",
+  "author": "Christian Quinders <c.quinders@gmail.com>",
+  "dependencies": {
+    "through": "~2.3.4",
+    "gulp-util": "~2.2.13"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">= 0.10"
+  }
+}
