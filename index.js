@@ -77,6 +77,7 @@ module.exports = function(fileName, opts) {
 		}
 
 		var ext = path.extname(file.path),
+			dir = path.dirname(file.path).split("/").pop(),
 			name = path.basename(file.path, ext).replace(/-min$|-debug$/, ""),
 			type = ext.substr(1),
 			module = {};
@@ -90,7 +91,7 @@ module.exports = function(fileName, opts) {
 		}
 
 		module.name = module.name || name;
-		module.path = name + "/" + name + "-min." + type;
+		module.path = dir + "/" + name + "-min." + type;
 		module.type = type;
 
 		if (module) {
